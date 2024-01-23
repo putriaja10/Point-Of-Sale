@@ -8,6 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Starbucks Menu',
       theme: ThemeData(
         primarySwatch: Colors.green,
@@ -79,7 +80,7 @@ class MyHomePage extends StatelessWidget {
         BottomNavigationBarItem(
           icon: Icon(
             Icons.list,
-            color: Color(0xFF202124),
+            color: Color(0xFF0000FF),
             size: 30,
           ),
           label: 'List',
@@ -123,7 +124,7 @@ class MenuItem extends StatelessWidget {
         children: [
           Image.network(
             image,
-            height: 200.0,
+            height: 100.0,
             width: double.infinity,
             fit: BoxFit.cover,
           ),
@@ -135,14 +136,14 @@ class MenuItem extends StatelessWidget {
                 Text(
                   name,
                   style: TextStyle(
-                    fontSize: 20.0,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 Text(
                   'Price: $price',
                   style: TextStyle(
-                    fontSize: 16.0,
+                    fontSize: 10.0,
                     color: Colors.grey,
                   ),
                 ),

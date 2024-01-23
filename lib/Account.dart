@@ -8,6 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
@@ -31,9 +32,7 @@ class MyAccountScreen extends StatelessWidget {
             CircleAvatar(
                 radius: 50,
                 child: Image.network(
-                    'https://acehprov.go.id/thumbnail/700x0/media/2020.07/starbucks.jpg')
-                //child: Icon(Icons.account_circle, size: 100),
-                ),
+                    'https://acehprov.go.id/thumbnail/700x0/media/2020.07/starbucks.jpg')),
             SizedBox(height: 10),
             Text(
               'Admin Starbuck',
@@ -45,33 +44,22 @@ class MyAccountScreen extends StatelessWidget {
             ListTile(
               leading: Icon(Icons.settings),
               title: Text('Pengaturan Akun'),
-              onTap: () {
-                // Tambahkan logika untuk pindah ke layar pengaturan akun
-                // Navigator.push(context, MaterialPageRoute(builder: (context) => SettingsScreen()));
-              },
+              onTap: () {},
             ),
             ListTile(
               leading: Icon(Icons.location_city),
               title: Text('Lokasi'),
-              onTap: () {
-                // Tambahkan logika untuk pindah ke layar ganti kata sandi
-                // Navigator.push(context, MaterialPageRoute(builder: (context) => ChangePasswordScreen()));
-              },
+              onTap: () {},
             ),
             ListTile(
               leading: Icon(Icons.lock),
               title: Text('Ganti Kata Sandi'),
-              onTap: () {
-                // Tambahkan logika untuk pindah ke layar ganti kata sandi
-                // Navigator.push(context, MaterialPageRoute(builder: (context) => ChangePasswordScreen()));
-              },
+              onTap: () {},
             ),
             ListTile(
               leading: Icon(Icons.exit_to_app),
               title: Text('Keluar'),
-              onTap: () {
-                // Tambahkan logika untuk keluar dari akun
-              },
+              onTap: () {},
             ),
           ],
         ),
@@ -107,7 +95,7 @@ class MyAccountScreen extends StatelessWidget {
         BottomNavigationBarItem(
           icon: Icon(
             Icons.account_circle_sharp,
-            color: Color(0xFF202124),
+            color: Color(0xFF0000FF),
             size: 30,
           ),
           label: 'Account',

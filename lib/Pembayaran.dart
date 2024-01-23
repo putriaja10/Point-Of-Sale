@@ -8,6 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
@@ -43,6 +44,7 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              Text(' '),
               Text('Total Belanja: Rp.208.000'),
               Text('Pajak: Rp.150.00'),
               Text(
@@ -78,9 +80,7 @@ class MyApp extends StatelessWidget {
               ),
               SizedBox(height: 20.0),
               ElevatedButton(
-                onPressed: () {
-                  // Logika untuk menyelesaikan pembayaran
-                },
+                onPressed: () {},
                 child: Text('Bayar Sekarang'),
               ),
             ],

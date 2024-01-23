@@ -8,6 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
@@ -42,7 +43,6 @@ class HomePage extends StatelessWidget {
       imageUrl:
           'https://asset-a.grid.id/crop/75x39:666x453/945x630/photo/2023/01/23/whatsapp-image-2023-01-23-at-16-20230123041106.jpeg',
     ),
-    // ... Tambahkan item menu lainnya
   ];
 
   @override
@@ -114,7 +114,7 @@ class HomePage extends StatelessWidget {
         BottomNavigationBarItem(
           icon: Icon(
             Icons.home_filled,
-            color: Color(0xFF202124),
+            color: Color(0xFF0000FF),
             size: 30,
           ),
           label: 'Home',

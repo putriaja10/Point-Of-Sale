@@ -8,6 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
@@ -41,24 +42,19 @@ class _PosScreenState extends State<PosScreen> {
             Expanded(
               child: ListView(
                 children: [
-                  // Daftar pesanan ditampilkan di sini
-                  // Contoh:
                   OrderItem(name: 'Oatmilk', price: 88.000),
                   OrderItem(name: 'Mocha', price: 120.000),
-                  // ...
                 ],
               ),
             ),
             SizedBox(height: 10),
             Text(
-              'Total: Rp 208.0000', // Gantilah dengan logika perhitungan total yang sesuai
+              'Total: Rp 208.0000',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 10),
             ElevatedButton(
-              onPressed: () {
-                // Logika untuk menyelesaikan pesanan
-              },
+              onPressed: () {},
               child: Text('Selesaikan Pesanan'),
             ),
           ],
